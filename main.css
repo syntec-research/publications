@@ -1,0 +1,116 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #050505;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+h2.year_title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 4px 8px;
+  margin: 0px;
+  padding-top: 30px;
+}
+
+.publications {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.publication_entry {
+  display: flex;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.publication_image {
+  position: relative;
+  min-width: 200px;
+  max-height: 200px;
+}
+
+.publication_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.publication {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+}
+
+.publication:hover {
+  background-color: #f0f6fc;
+}
+
+.publication_content {
+  position: relative;
+  padding: 8px 8px 12px 24px;
+  margin: 0px 8px 12px 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.publication_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.publication_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.publication_content::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.publication_title {
+  position: relative;
+  margin: 0 0 5px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.publication_authors {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 11px;
+  padding-bottom: 10px;
+}
+
+.publication_venue {
+  font-size: 11px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.publication_abstract {
+  margin: 0px;
+  font-size: 11px;
+  line-height: 1.5;
+}
