@@ -27,6 +27,70 @@
 <a name='2024'></a>
 <h2 class="year_title">2024</h2>
     <ul class="publications">
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/FaceFolds/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_FaceFolds.png" alt="FaceFolds" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+FaceFolds: Meshed Radiance Manifolds for Efficient Volumetric Rendering of Dynamic Faces
+            </h2><div class="publication_authors">
+Safa C. Medin, Gengyan Li, Ruofei Du, Stephan Garbin, Philip Davidson, Gregory W. Wornell, Thabo Beeler, Abhimitra Meka
+            </div><div class="publication_venue">
+I3D 2024
+            </div><div class="publication_abstract">
+3D rendering of dynamic face captures is a challenging problem, and it demands improvements on several fronts—photorealism, efficiency, compatibility, and configurability. We present a novel representation that enables high-quality volumetric rendering of an actor's dynamic facial performances with minimal compute and memory footprint. It runs natively on commodity graphics soft- and hardware, and allows for a graceful trade-off between quality and efficiency. Our method utilizes recent advances in neural rendering, particularly learning discrete radiance manifolds to sparsely sample the scene to model volumetric effects. We achieve efficient modeling by learning a single set of manifolds for the entire dynamic sequence, while implicitly modeling appearance changes as temporal canonical texture. We export a single layered mesh and view-independent RGBA texture video that is compatible with legacy graphics renderers without additional ML integration. We demonstrate our method by rendering dynamic face captures of real actors in a game engine, at comparable photorealism to state-of-the-art neural rendering techniques at previously unseen frame rates.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	    
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/GANtlitz/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_GANtlitz.png" alt="GANtlitz" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+GANtlitz: Ultra High Resolution Generative Model for Multi-Modal Face Textures
+            </h2><div class="publication_authors">
+Aurel Gruber, Edo Collins, Abhimitra Meka, Franziska Mueller, Kripasindhu Sarkar, Sergio Orts-Escolano, Luca Prasso, Jay Busch, Markus Gross, Thabo Beeler
+            </div><div class="publication_venue">
+EUROGRAPHICS 2024
+            </div><div class="publication_abstract">
+High-resolution texture maps are essential to render photoreal digital humans for visual effects or to generate data for machine learning. The acquisi- tion of high resolution assets at scale is cumbersome, it involves enrolling a large number of human subjects, using expensive multi-view camera setups, and significant manual artistic effort to align the textures. To alleviate these problems, we introduce GANtlitz, a generative model that can synthesize multi-modal ultra-high-resolution face appearance maps for novel identities. Our method solves three distinct challenges: 1) unavailability of a very large data corpus generally required for training generative models, 2) memory and computational limitations of training a GAN at ultra-high resolutions, and 3) consistency of appearance features such as skin color, pores and wrinkles in high-resolution textures across different modalities. We introduce dual-style blocks, an extension to the style blocks of the StyleGAN2 architecture, which improve multi-modal synthesis. Our patch-based architecture is trained only on image patches obtained from a small set of face textures (<100) and yet allows us to generate seamless appearance maps of novel identities at 6𝑘 × 4𝑘 resolution. Extensive qualitative and quantitative evaluations and baseline comparisons show the efficacy of our proposed system.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	    
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/ShellNeRF/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_ShellNeRF.png" alt="ShellNeRF" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+ShellNeRF: Learning a Controllable High-resolution Model of the Eye and Periocular Region
+            </h2><div class="publication_authors">
+Gengyan Li, Kripasindhu Sarkar, Abhimitra Meka, Marcel C. Bühler, Franziska Mueller, Paulo Gotardo, Otmar Hilliges, Thabo Beeler
+            </div><div class="publication_venue">
+EUROGRAPHICS 2024
+            </div><div class="publication_abstract">
+Eye gaze and expressions are crucial non-verbal signals in face-to-face communication. Visual effects and telepresence demand significant improvements in personalized tracking, animation, and synthesis of the eye region to achieve true immersion. Morphable face models, in combination with coordinate-based neural volumetric representations, show promise in solving the difficult problem of reconstructing intricate geometry (eyelashes) and synthesizing photorealistic appearance variations (wrinkles and specularities) of eye performances. We propose a novel hybrid representation - ShellNeRF - that builds a discretized volume around a 3DMM face mesh using concentric surfaces to model the deformable ‘periocular’ region. We define a canonical space using the UV layout of the shells that constrains the space of dense correspondence search. Combined with an explicit eyeball mesh for modeling corneal light-transport, our model allows for animatable photorealistic 3D synthesis of the whole eye region. Using multi-view video input, we demonstrate significant improvements over state-of-the-art in expression re-enactment and transfer for high-resolution close-up views of the eye region.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->	
+
 <!--  Entry -->	
       <li class="publication_entry">
         <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/MACS/';" style="cursor: pointer;">
