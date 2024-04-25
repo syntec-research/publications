@@ -30,6 +30,54 @@
 
 <!--  Entry -->	
       <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://korrawe.github.io/dno-project/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_DNO.png" alt="FishEyeVIT" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+DNO: Optimizing Diffusion Noise Can Serve As Universal Motion Priors
+            </h2><div class="publication_authors">
+Korrawe Karunratanakul, Konpat Preechakul, Emre Aksan, Thabo Beeler, Supasorn Suwajanakorn, Siyu Tang
+            </div><div class="publication_venue">
+CVPR 2024
+            </div><div class="publication_abstract">
+We propose Diffusion Noise Optimization (DNO), a new method that effectively leverages existing motion diffusion models as motion priors for a wide range of motion-related tasks.
+
+Instead of training a task-specific diffusion model for each new task, DNO operates by optimizing the diffusion latent noise of an existing pre-trained text-to-motion model. Given the corresponding latent noise of a human motion, it propagates the gradient from the target criteria defined on the motion space through the whole denoising process to update the diffusion latent noise. As a result, DNO supports any use cases where criteria can be defined as a function of motion.
+
+In particular, we show that, for motion editing and control, DNO outperforms existing methods in both achieving the objective and preserving the motion content. DNO accommodates a diverse range of editing modes, including changing trajectory, pose, joint locations, or avoiding newly added obstacles.
+
+In addition, DNO is effective in motion denoising and completion, producing smooth and realistic motion from noisy and partial inputs. DNO achieves these results at inference time without the need for model retraining, offering great versatility for any defined reward or loss function on the motion representation.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://people.mpi-inf.mpg.de/~jianwang/projects/egowholemocap/index.html';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_FisheyeViT.png" alt="FishEyeVIT" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Egocentric Whole-Body Motion Capture with FisheyeViT and Diffusion-Based Motion Refinement
+            </h2><div class="publication_authors">
+Jian Wang, Zhe Cao, Diogo Luvizon,   Lingjie Liu,  Kripasindhu Sarkar,   Danhang Tang,   Thabo Beeler,  Christian Theobalt
+            </div><div class="publication_venue">
+CVPR 2024
+            </div><div class="publication_abstract">
+In this work, we explore egocentric whole-body motion capture using a single fisheye camera, which simultaneously estimates human body and hand motion. This task presents significant challenges due to three factors, the lack of high-quality datasets, fisheye camera distortion, and human body self-occlusion. To address these challenges, we propose a novel approach that leverages FisheyeViT to extract fisheye image features, which are subsequently converted into pixel-aligned 3D heatmap representations for 3D human body pose prediction. For hand tracking, we incorporate dedicated hand detection and hand pose estimation networks for regressing 3D hand poses. Finally, we develop a diffusion-based whole-body motion prior model to refine the estimated whole-body motion while accounting for joint uncertainties. To train these networks, we collect a large synthetic dataset, EgoWholeBody, comprising 840,000 high-quality egocentric images captured across a diverse range of whole-body motion sequences. Quantitative and qualitative evaluations demonstrate the effectiveness of our method in producing high-quality whole-body motion estimates from a single egocentric camera.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
         <div class="publication" onclick="location.href='https://syntec-research.github.io/FaceFolds/';" style="cursor: pointer;">
           <div class="publication_image">
             <img src="./images/2024_FaceFolds.png" alt="FaceFolds" />
