@@ -99,6 +99,27 @@ I3D 2024
 	    
 <!--  Entry -->	
       <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/FaceStab/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_FaceStab.png" alt="GANtlitz" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Learning to Stabilize Faces
+            </h2><div class="publication_authors">
+Jan Bednarik, Erroll Wood, Vassilis Choutas, Timo Bolkart, Daoye Wang, Chenglei Wu, Thabo Beeler
+            </div><div class="publication_venue">
+EUROGRAPHICS 2024
+            </div><div class="publication_abstract">
+Modern facial scanning produces high-quality meshes but often requires subsequent stabilization to remove rigid head movement. This is crucial for game or movie character development where deformation due to expressions need be isolated from global head motion. Manual stabilization is tedious, leading to automated attempts. However, existing methods are flawed, requiring manual input, being imprecise, slow, or needing temporally consistent data. We propose a new learning-based approach which is precise and fully automatic. We frame stabilization as regression, use a 3DMM for training data generation and predict rigid transforms stabilizing pairs of misaligned face meshes. Experiments confirm our method's effectiveness for both random expression sets and facial performances.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	    
+<!--  Entry -->	
+      <li class="publication_entry">
         <div class="publication" onclick="location.href='https://syntec-research.github.io/GANtlitz/';" style="cursor: pointer;">
           <div class="publication_image">
             <img src="./images/2024_GANtlitz.png" alt="GANtlitz" />
@@ -111,7 +132,7 @@ Aurel Gruber, Edo Collins, Abhimitra Meka, Franziska Mueller, Kripasindhu Sarkar
             </div><div class="publication_venue">
 EUROGRAPHICS 2024
             </div><div class="publication_abstract">
-High-resolution texture maps are essential to render photoreal digital humans for visual effects or to generate data for machine learning. The acquisi- tion of high resolution assets at scale is cumbersome, it involves enrolling a large number of human subjects, using expensive multi-view camera setups, and significant manual artistic effort to align the textures. To alleviate these problems, we introduce GANtlitz, a generative model that can synthesize multi-modal ultra-high-resolution face appearance maps for novel identities. Our method solves three distinct challenges: 1) unavailability of a very large data corpus generally required for training generative models, 2) memory and computational limitations of training a GAN at ultra-high resolutions, and 3) consistency of appearance features such as skin color, pores and wrinkles in high-resolution textures across different modalities. We introduce dual-style blocks, an extension to the style blocks of the StyleGAN2 architecture, which improve multi-modal synthesis. Our patch-based architecture is trained only on image patches obtained from a small set of face textures (<100) and yet allows us to generate seamless appearance maps of novel identities at 6𝑘 × 4𝑘 resolution. Extensive qualitative and quantitative evaluations and baseline comparisons show the efficacy of our proposed system.
+High-resolution texture maps are essential to render photoreal digital humans for visual effects or to generate data for machine learning. The acquisi- tion of high resolution assets at scale is cumbersome, it involves enrolling a large number of human subjects, using expensive multi-view camera setups, and significant manual artistic effort to align the textures. To alleviate these problems, we introduce GANtlitz, a generative model that can synthesize multi-modal ultra-high-resolution face appearance maps for novel identities. Our method solves three distinct challenges: 1) unavailability of a very large data corpus generally required for training generative models, 2) memory and computational limitations of training a GAN at ultra-high resolutions, and 3) consistency of appearance features such as skin color, pores and wrinkles in high-resolution textures across different modalities. We introduce dual-style blocks, an extension to the style blocks of the StyleGAN2 architecture, which improve multi-modal synthesis. Our patch-based architecture is trained only on image patches obtained from a small set of face textures (&lt;100) and yet allows us to generate seamless appearance maps of novel identities at 6𝑘 × 4𝑘 resolution. Extensive qualitative and quantitative evaluations and baseline comparisons show the efficacy of our proposed system.
             </div>
           </div>
         </div>
