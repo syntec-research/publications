@@ -29,9 +29,136 @@
 
 <!--  Entry -->	
       <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://qingqing-zhao.github.io/PhysAvatar';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_PhysAvatar.png" alt="PhysAvatar" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+PhysAvatar: Learning the Physics of Dressed 3D Avatars
+from Visual Observations
+            </h2><div class="publication_authors">
+Yang Zheng*, Qingqing Zhao*, Guandao Yang, Wang Yifan, Donglai Xiang, Florian Dubost, Dmitry Lagun, Thabo Beeler, Federico Tombari, Leonidas Guibas, Gordon Wetzstein
+            </div><div class="publication_venue">
+ECCV 2024
+            </div><div class="publication_abstract">
+We introduce PhysAvatar, a novel framework that combines inverse rendering with inverse physics to automatically estimate the shape and appearance of a human from multi-view video data along with the physical parameters of the fabric of their clothes. We adopt a mesh-aligned 4D Gaussian technique for spatio-temporal mesh tracking as well as a physically based inverse renderer to estimate the intrinsic material properties. PhysAvatar integrates a physics simulator to estimate the physical parameters of the garments using gradient-based optimization in a principled manner. These novel capabilities enable PhysAvatar to create high-quality novel-view renderings of avatars dressed in loose-fitting clothes under motions and lighting conditions not seen in the training data.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/MagicMirror/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_MagicMirror.png" alt="MagicMirror" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space
+            </h2><div class="publication_authors">
+Armand Comas, Di Qiu, Menglei Chai, Marcel Buehler, Amit Raj, Ruiqi Gao, Qiangeng Xu, Mark Matthews, Paulo Gotardo, Sergio Orts-Escolano, Thabo Beeler
+            </div><div class="publication_venue">
+ECCV 2024
+            </div><div class="publication_abstract">
+We introduce a novel framework for 3D human avatar generation and personalization, leveraging text prompts to enhance user engagement and customization. Central to our approach are key innovations aimed at overcoming the challenges in photo-realistic avatar synthesis. Firstly, we utilize a conditional Neural Radiance Fields (NeRF) model, trained on a large-scale unannotated multi-view dataset, to create a versatile initial solution space that accelerates and diversifies avatar generation. Secondly, we develop a geometric prior, leveraging the capabilities of Text-to-Image Diffusion Models, to ensure superior view invariance and enable direct optimization of avatar geometry. These foundational ideas are complemented by our optimization pipeline built on Variational Score Distillation (VSD), which mitigates texture loss and over-saturation issues. As supported by our extensive experiments, these strategies collectively enable the creation of custom avatars with unparalleled visual quality and better adherence to input text prompts.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://nirvanalan.github.io/projects/gaussian3diff/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_Gaussian3Diff.png" alt="Gaussian3Diff" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Gaussian3Diff: 3D Gaussian Diffusion for 3D Full Head Synthesis and Editing
+            </h2><div class="publication_authors">
+Yushi Lan, Feitong Tan, Di Qiu, Qiangeng Xu, Kyle Genova, Zeng Huang, Sean Fanello, Rohit Pandey, Thomas Funkhouser, Chen Change Loy, Yinda Zhang
+            </div><div class="publication_venue">
+ECCV 2024
+            </div><div class="publication_abstract">
+We present a novel framework for generating photorealistic 3D human head and subsequently manipulating and reposing them with remarkable flexibility. The proposed approach leverages an implicit function representation of 3D human heads, employing 3D Gaussians anchored on a parametric face model. To enhance representational capabilities and encode spatial information, we embed a lightweight tri-plane payload within each Gaussian rather than directly storing color and opacity. Additionally, we parameterize the Gaussians in a 2D UV space via a 3DMM, enabling effective utilization of the diffusion model for 3D head avatar generation. Our method facilitates the creation of diverse and realistic 3D human heads with fine-grained editing over facial features and expressions. Extensive experiments demonstrate the effectiveness of our method.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+		
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://arxiv.org/abs/2312.04875';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_MVDD.png" alt="MVDD" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+MVDD: Multi-View Depth Diffusion Models
+            </h2><div class="publication_authors">
+Zhen Wang, Qiangeng Xu, Feitong Tan, Menglei Chai, Shichen Liu, Rohit Pandey, Sean Fanello, Achuta Kadambi, Yinda Zhang
+            </div><div class="publication_venue">
+ECCV 2024
+            </div><div class="publication_abstract">
+Denoising diffusion models have demonstrated outstanding results in 2D image generation, yet it remains a challenge to replicate its success in 3D shape generation. In this paper, we propose leveraging multi-view depth, which represents complex 3D shapes in a 2D data format that is easy to denoise. We pair this representation with a diffusion model, MVDD, that is capable of generating high-quality dense point clouds with 20K+ points with fine-grained details. To enforce 3D consistency in multi-view depth, we introduce an epipolar line segment attention that conditions the denoising step for a view on its neighboring views. Additionally, a depth fusion module is incorporated into diffusion steps to further ensure the alignment of depth maps. When augmented with surface reconstruction, MVDD can also produce high-quality 3D meshes. Furthermore, MVDD stands out in other tasks such as depth completion, and can serve as a 3D prior, significantly boosting many downstream tasks, such as GAN inversion. State-of-the-art results from extensive experiments demonstrate MVDD's excellent ability in 3D shape generation, depth completion, and its potential as a 3D prior for downstream tasks.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://arxiv.org/abs/2402.12377';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_BOG.png" alt="Binary Opacity Grids" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis
+            </h2><div class="publication_authors">
+Christian Reiser, Stephan Garbin, Pratul P. Srinivasan, Dor Verbin, Richard Szeliski, Ben Mildenhall, Jonathan T. Barron, Peter Hedman, Andreas Geiger
+            </div><div class="publication_venue">
+ACM SIGGRAPH 2024
+            </div><div class="publication_abstract">
+While surface-based view synthesis algorithms are appealing due to their low computational requirements, they often struggle to reproduce thin structures. In contrast, more expensive methods that model the scene's geometry as a volumetric density field (e.g. NeRF) excel at reconstructing fine geometric detail. However, density fields often represent geometry in a "fuzzy" manner, which hinders exact localization of the surface. In this work, we modify density fields to encourage them to converge towards surfaces, without compromising their ability to reconstruct thin structures. First, we employ a discrete opacity grid representation instead of a continuous density field, which allows opacity values to discontinuously transition from zero to one at the surface. Second, we anti-alias by casting multiple rays per pixel, which allows occlusion boundaries and subpixel structures to be modelled without using semi-transparent voxels. Third, we minimize the binary entropy of the opacity values, which facilitates the extraction of surface geometry by encouraging opacity values to binarize towards the end of training. Lastly, we develop a fusion-based meshing strategy followed by mesh simplification and appearance model fitting. The compact meshes produced by our model can be rendered in real-time on mobile devices and achieve significantly higher view synthesis quality compared to existing mesh-based approaches.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	  
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/Lite2Relight/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_Relight.png" alt="Lite2Relight" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Lite2Relight: 3D-aware Single Image Portrait Relighting
+            </h2><div class="publication_authors">
+Pramod Rao, Gereon Fox, Abhimitra Meka, Mallikarjun B R, Fangneng Zhan, Tim Weyrich, Bernd Bickel,  Hanspeter Pfister, Wojciech Matusik,  Mohamed Elgharib, Christian Theobalt
+            </div><div class="publication_venue">
+ACM SIGGRAPH 2024
+            </div><div class="publication_abstract">
+Achieving photorealistic 3D view synthesis and relighting of human portraits is pivotal for advancing AR/VR applications. Existing methodologies in portrait relighting demonstrate substantial limitations in terms of generalization and 3D consistency, coupled with inaccuracies in physically realistic lighting and identity preservation. Furthermore, personalization from a single view is difficult. to achieve and often requires multiview images during the testing phase or involves slow optimization processes. This paper introduces Lite2Relight , a novel technique that can predict 3D consistent head poses of portraits while performing physically plausible light editing at interactive speed. Our method uniquely extends the generative capabilities and efficient volumetric representation of EG3D, leveraging a lightstage dataset to implicitly disentangle face reflectance and perform relighting under target HDRI environment maps. By utilizing a pre-trained geometry-aware encoder and a feature alignment module, we map input images into a relightable 3D space, enhancing them with a strong face geometry and reflectance prior. Through extensive quantitative and qualitative evaluations, we show that our method outperforms the state-of-the-art methods in terms of efficacy, photorealism, and practical application. This includes producing 3D-consistent results of the full head, including hair, eyes, and expressions. Lite2Relight paves the way for large scale adoption of photorealistic portrait editing in various domains, offering a robust, interactive solution to a previously constrained problem.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
         <div class="publication" onclick="location.href='https://korrawe.github.io/dno-project/';" style="cursor: pointer;">
           <div class="publication_image">
-            <img src="./images/2024_DNO.png" alt="FishEyeVIT" />
+            <img src="./images/2024_DNO.png" alt="DNO" />
           </div>
           <div class="publication_content">
             <h2 class="publication_title">
