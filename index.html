@@ -223,6 +223,28 @@ Denoising diffusion models have demonstrated outstanding results in 2D image gen
 
 <!--  Entry -->	
       <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://pratulsrinivasan.github.io/nuvo/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_Nuvo.png" alt="Nuvo" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Nuvo: Neural UV Mapping
+for Unruly 3D Representations
+            </h2><div class="publication_authors">
+Pratul P. Srinivasan, Stephan J. Garbin, Dor Verbin, Jonathan T. Barron, Ben Mildenhall
+            </div><div class="publication_venue">
+ECCV 2024
+            </div><div class="publication_abstract">
+Existing UV mapping algorithms are designed to operate on well-behaved meshes, instead of the geometry representations produced by state-of-the-art 3D reconstruction and generation techniques. As such, applying these methods to the volume densities recovered by neural radiance fields and related techniques (or meshes triangulated from such fields) results in texture atlases that are too fragmented to be useful for tasks such as view synthesis or appearance editing. We present a UV mapping method designed to operate on geometry produced by 3D reconstruction and generation techniques. Instead of computing a mapping defined on a mesh's vertices, our method Nuvo uses a neural field to represent a continuous UV mapping, and optimizes it to be a valid and well-behaved mapping for just the set of visible points, i.e. only points that affect the scene's appearance. We show that our model is robust to the challenges posed by ill-behaved geometry, and that it produces editable UV mappings that can represent detailed appearance.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
         <div class="publication" onclick="location.href='https://arxiv.org/abs/2402.12377';" style="cursor: pointer;">
           <div class="publication_image">
             <img src="./images/2024_BOG.png" alt="Binary Opacity Grids" />
