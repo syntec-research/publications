@@ -29,6 +29,115 @@
 
 <!--  Entry -->	
       <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/GroomCap/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_GroomCap.png" alt="GroomCap" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+GroomCap: Prior-Free High-Quality Hair Capture
+            </h2><div class="publication_authors">
+Yuxiao Zhou, Menglei Chai, Daoye Wang, Sebastian Winberg,
+Erroll Wood, Kripasindhu Sarkar, Markus Gross, Thabo Beeler
+            </div><div class="publication_venue">
+SIGASIA 2024
+            </div><div class="publication_abstract">
+Despite recent advances in multi-view hair reconstruction, achieving strand-level precision remains a significant challenge due to inherent limitations in existing capture pipelines. We introduce GroomCap, a novel multi-view hair capture method that reconstructs faithful and high-fidelity hair geometry without relying on external data priors. To address the limitations of conventional reconstruction algorithms, we propose a neural implicit representation for hair volume that encodes high-resolution 3D orientation and occupancy from input views. This implicit hair volume is trained with a new volumetric 3D orientation rendering algorithm, coupled with 2D orientation distribution supervision, to effectively prevent the loss of structural information caused by undesired orientation blending. We further propose a Gaussian-based hair optimization strategy to refine the traced hair strands with a novel chained Gaussian representation, utilizing direct photometric supervision from images. Our results demonstrate that GroomCap is able to capture high-quality hair geometries that are not only more precise and detailed than existing methods but also versatile enough for a range of applications.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://humansensinglab.github.io/fabric-diffusion/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_FabricDiffusion.png" alt="FabricDiffusion" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+FabricDiffusion: High-Fidelity Texture Transfer for 3D Garments Generation from In-The-Wild Images
+            </h2><div class="publication_authors">
+Cheng Zhang*,    Yuanhao Wang*,   Francisco Vicente Carrasco,    Chenglei Wu,    Jinlong Yang,
+Thabo Beeler,   Fernando De la Torre
+            </div><div class="publication_venue">
+SIGASIA 2024
+            </div><div class="publication_abstract">
+We introduce FabricDiffuion, a method for transferring fabric textures from a single clothing image to 3D garments of arbitrary shapes. Existing approaches typically synthesize textures on the garment surface through 2D-to-3D texture mapping or depth-aware inpainting via generative models. Unfortunately, these methods often struggles at capturing and preserving texture details, particularly due to challenging occlusions, distortions, or poses in the input image. Inspired by the observation that in fashion industry most garments are constructed by stitching sewing patterns with flat, repeatable textures, we cast the task of clothing texture transfer as extracting distortion-free, tileable texture materials that are subsequently mapped onto the UV space of the garment. Building upon this insight, we train a denoising diffusion model with a large-scale synthetic dataset to rectify distortions in the input texture image. This process yields a flat texture map that enables a tight coupling with existing Physically-Based Rendering (PBR) material generation pipelines, allowing for realistic relighting of the garment under various lighting conditions. We show that FabricDiffusion can transfer a variety of features from a single clothing image including texture patterns, material properties, and detailed prints and logos. Extensive experiments demonstrate that our model significantly outperforms state-to-the-art methods on both synthetic data and real-world, in-the-wild clothing images while generalizing to unseen textures and garment shapes.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/EgoAvatar/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_EgoAvatar.png" alt="EgoAvatar" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+EgoAvatar: Egocentric View-Driven and Photorealistic Full-body Avatars
+            </h2><div class="publication_authors">
+Jianchun Chen,   Jian Wang,  Yinda Zhang,   Rohit Pandey,   Thabo Beeler,  Marc Habermann,  Christian Theobalt
+            </div><div class="publication_venue">
+SIGASIA 2024
+            </div><div class="publication_abstract">
+Immersive VR telepresence ideally means being able to interact and communicate with digital avatars that are indistinguishable from and precisely reflect the behaviour of their real counterparts. The core technical challenge is two fold: Creating a digital double that faithfully reflects the real human and tracking the real human solely from egocentric sensing devices that are lightweight and have a low energy consumption, e.g. a single RGB camera. Up to date, no unified solution to this problem exists as recent works solely focus on egocentric motion capture, only model the head, or build avatars from multi-view captures. In this work, we, for the first time in literature, propose a person-specific egocentric telepresence approach, which jointly models the photoreal digital avatar while also driving it from a single egocentric video. We first present a character model that is animatible, i.e. can be solely driven by skeletal motion, while being capable of modeling geometry and appearance. Then, we introduce a personalized egocentric motion capture component, which recovers full-body motion from an egocentric video. Finally, we apply the recovered pose to our character model and perform a test-time mesh refinement such that the geometry faithfully projects onto the egocentric view. To validate our design choices, we propose a new and challenging benchmark, which provides paired egocentric and dense multi-view videos of real humans performing various motions. Our experiments demonstrate a clear step towards egocentric and photoreal telepresence as our method outperforms baselines as well as competing methods.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/Cafca/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_Cafca.png" alt="Cafca" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Cafca: High-quality Novel View Synthesis of Expressive Faces from Casual Few-shot Captures
+            </h2><div class="publication_authors">
+Marcel C. Bühler, Gengyan Li, Erroll Wood, Leonhard Helminger, Xu Chen, Tanmay Shah, Daoye Wang, Stephan Garbin, Sergio Orts-Escolano, Otmar Hilliges, Dmitry Lagun, Jérémy Riviere, Paulo Gotardo, Thabo Beeler, Abhimitra Meka, Kripasindhu Sarkar
+            </div><div class="publication_venue">
+SIGASIA 2024
+            </div><div class="publication_abstract">
+Volumetric modeling and neural radiance field representations have revolutionized 3D face capture and photorealistic novel view synthesis. However, these methods often require hundreds of multi-view input images and are thus inapplicable to cases with less than a handful of inputs. We present a novel volumetric prior on human faces that allows for high-fidelity expressive face modeling from as few as three input views captured in the wild. Our key insight is that an implicit prior trained on synthetic data alone can generalize to extremely challenging real-world identities and expressions and render novel views with fine idiosyncratic details like wrinkles and eyelashes. We leverage a 3D Morphable Face Model to synthesize a large training set, rendering each identity with different expressions, hair, clothing, and other assets. We then train a conditional Neural Radiance Field prior on this synthetic dataset and, at inference time, fine-tune the model on a very sparse set of real images of a single subject. On average, the fine-tuning requires only three inputs to cross the synthetic-to-real domain gap. The resulting personalized 3D model reconstructs strong idiosyncratic facial expressions and outperforms the state-of-the-art in high-quality novel view synthesis of faces from sparse inputs in terms of perceptual and photo-metric quality.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://rgl.epfl.ch/publications/Yilmazer2024Solving';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2024_InversePDE.png" alt="InversePDE" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Solving Inverse PDE Problems using Grid-Free Monte Carlo Estimators
+            </h2><div class="publication_authors">
+Ekrem Fatih Yilmazer, Delio Vicini, Wenzel Jakob
+            </div><div class="publication_venue">
+SIGASIA 2024
+            </div><div class="publication_abstract">
+Partial differential equations can model diverse physical phenomena including heat diffusion, incompressible flows, and electrostatic potentials. Given a description of an object’s boundary and interior, traditional methods solve such PDEs by densely meshing the interior and then solving a large and sparse linear system derived from this mesh. Recent grid-free solvers take an alternative approach and avoid this complexity in exchange for randomness: they compute stochastic solution estimates and generally bear a striking resemblance to physically-based rendering algorithms.
+
+In this article, we develop algorithms targeting the inverse form of this problem: given an already existing solution of a PDE, we infer parameters characterizing the boundary and interior. In the grid-free setting, there are again significant connections to rendering, and we show how insights from both fields can be combined to compute unbiased derivative estimates that enable gradient-based optimization. In this process, we encounter new challenges that must be addressed to obtain practical solutions. We introduce acceleration and variance reduction strategies and show how to differentiate branching random walks in reverse mode. We finally demonstrate our approach on both simulated data and a real-world electrical impedance tomography experiment, where we reconstruct the position of a conducting object from voltage measurements taken in a saline-filled tank.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->	
+      <li class="publication_entry">
         <div class="publication" onclick="location.href='https://qingqing-zhao.github.io/PhysAvatar';" style="cursor: pointer;">
           <div class="publication_image">
             <img src="./images/2024_PhysAvatar.png" alt="PhysAvatar" />
