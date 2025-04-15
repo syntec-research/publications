@@ -15,6 +15,7 @@
 <body>
 	<table><tr><td rowspan="2" style="vertical-align: middle; padding-top: 6px;"></td><td style="padding-left: 10px;">
 	<H1>Publication Archive</h1></td></tr><tr><td style="padding-left: 10px;">
+		<button onclick="location.href='#2025';">2025</button>
 		<button onclick="location.href='#2024';">2024</button>
 		<button onclick="location.href='#2023';">2023</button>
 		<button onclick="location.href='#2022';">2022</button>
@@ -23,10 +24,234 @@
 	</td></tr></table>
 <div class="content">
 <div class="year_section">
+<a name='2025'></a>
+<h2 class="year_title">2025</h2>
+    <ul class="publications">
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/FRAME/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_Frame.png" alt="FRAME" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Floor-aligned Representation for Avatar Motion from Egocentric Video
+            </h2><div class="publication_authors">
+Andrea Boscolo Camiletto,
+Jian Wang,
+Eduardo Alvarado,
+Rishabh Dabral,
+Thabo Beeler,
+Marc Habermann,
+Christian Theobalt
+            </div><div class="publication_venue">
+CVPR 2025 (Highlight)
+            </div><div class="publication_abstract">
+Egocentric motion capture with a head-mounted body-facing stereo camera is crucial for VR and AR applications but presents significant challenges such as heavy occlusions and limited annotated real-world data. Existing methods rely on synthetic pretraining and struggle to generate smooth and accurate predictions in real-world settings, particularly for lower limbs. Our work addresses these limitations by introducing a lightweight VR-based data collection setup with on-board, real-time 6D pose tracking. Using this setup, we collected the most extensive real-world dataset for ego-facing ego-mounted cameras to date in size and motion variability. Effectively integrating this multimodal input — device pose and camera feeds — is challenging due to the differing characteristics of each data source. To address this, we propose FRAME, a simple yet effective architecture that combines device pose and camera feeds for state-of-the-art body pose prediction through geometrically sound multimodal integration and can run at 300 FPS on modern hardware. Lastly, we showcase a novel training strategy to enhance the model’s generalization capabilities. Our approach exploits the problem’s geometric properties, yielding high-quality motion capture free from common artifacts in prior works. Qualitative and quantitative evaluations, along with extensive comparisons, demonstrate the effectiveness of our method.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/GroomLight/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_GroomLight.png" alt="GroomLight" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+GroomLight: Hybrid Inverse Rendering for Relightable Human Hair Appearance Modeling
+            </h2><div class="publication_authors">
+Yang Zheng, Menglei Chai, Delio Vicini, Yuxiao Zhou, Yinghao Xu, Leonidas Guibas, Gordon Wetzstein, Thabo Beeler
+            </div><div class="publication_venue">
+CVPR 2025
+            </div><div class="publication_abstract">
+We present GroomLight, a novel method for relightable hair appearance modeling from multi-view images. Existing hair capture methods struggle to balance photorealistic rendering with relighting capabilities. Analytical material models, while physically grounded, often fail to fully capture appearance details. Conversely, neural rendering approaches excel at view synthesis but generalize poorly to novel lighting conditions. GroomLight addresses this challenge by combining the strengths of both paradigms. It employs an extended hair BSDF model to capture primary light transport and a light-aware residual model to reconstruct the remaining details. We further propose a hybrid inverse rendering pipeline to optimize both components, enabling high-fidelity relighting, view synthesis, and material editing. Extensive evaluations on real-world hair data demonstrate state-of-the-art performance of our method.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://zielon.github.io/gem/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_GEM.png" alt="GEM" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Gaussian Eigen Models for Human Heads
+            </h2><div class="publication_authors">
+Wojciech Zielonka, Timo Bolkart, Thabo Beeler, Justus Thies
+            </div><div class="publication_venue">
+CVPR 2025
+            </div><div class="publication_abstract">
+Current personalized neural head avatars face a trade-off: lightweight models lack detail and realism, while high-quality, animatable avatars require significant computational resources, making them unsuitable for commodity devices. To address this gap, we introduce Gaussian Eigen Models (GEM), which provide high-quality, lightweight, and easily controllable head avatars. GEM utilizes 3D Gaussian primitives for representing the appearance combined with Gaussian splatting for rendering. Building on the success of mesh-based 3D morphable face models (3DMM), we define GEM as an ensemble of linear eigenbases for representing the head appearance of a specific subject. In particular, we construct linear bases to represent the position, scale, rotation, and opacity of the 3D Gaussians. This allows us to efficiently generate Gaussian primitives of a specific head shape by a linear combination of the basis vectors, only requiring a low-dimensional parameter vector that contains the respective coefficients. We propose to construct these linear bases (GEM) by distilling high-quality compute-intense CNN-based Gaussian avatar models that can generate expression-dependent appearance changes like wrinkles. These high-quality models are trained on multi-view videos of a subject and are distilled using a series of principal component analyses. Once we have obtained the bases that represent the animatable appearance space of a specific human, we learn a regressor that takes a single RGB image as input and predicts the low-dimensional parameter vector that corresponds to the shown facial expression. In a series of experiments, we compare GEM's self-reenactment and cross-person reenactment results to state-of-the-art 3D avatar methods, demonstrating GEM's higher visual quality and better generalization to new expressions.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/bimart/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_BimArt.png" alt="BimArt" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+BimArt: A Unified Approach for the Synthesis of 3D Bimanual Interaction with Articulated Objects
+            </h2><div class="publication_authors">
+Wanyue Zhang,   Rishabh Dabral,   Vladislav Golyanik,   Vasileios Choutas,   Eduardo Alvarado,   Thabo Beeler,   Marc Habermann,   Christian Theobalt
+            </div><div class="publication_venue">
+CVPR 2025
+            </div><div class="publication_abstract">
+We present BimArt, a novel generative approach for synthesizing 3D bimanual hand interactions with articulated objects. Unlike prior works, we do not rely on a reference grasp, a coarse hand trajectory, or separate modes for grasping and articulating. To achieve this, we first generate distance-based contact maps conditioned on the object trajectory with an articulation-aware feature representation, revealing rich bimanual patterns for manipulation. The learned contact prior is then used to guide our hand motion generator, producing diverse and realistic bimanual motions for object movement and articulation. Our work offers key insights into feature representation and contact prior for articulated objects, demonstrating their effectiveness in taming the complex, high-dimensional space of bimanual hand-object interactions. Through comprehensive quantitative experiments, we demonstrate a clear step towards simplified and high-quality hand-object animations that excel over the state-of-the-art in motion quality and diversity.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://arxiv.org/abs/2504.08449';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_Ego4o.png" alt="Ego4o" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Ego4o: Egocentric Human Motion Capture and Understanding from Multi-Modal Input
+            </h2><div class="publication_authors">
+Jian Wang, Rishabh Dabral, Diogo Luvizon, Zhe Cao, Lingjie Liu, Thabo Beeler, Christian Theobalt
+            </div><div class="publication_venue">
+CVPR 2025
+            </div><div class="publication_abstract">
+This work focuses on tracking and understanding human motion using consumer wearable devices, such as VR/AR headsets, smart glasses, cellphones, and smartwatches. These devices provide diverse, multi-modal sensor inputs, including egocentric images, and 1-3 sparse IMU sensors in varied combinations. Motion descriptions can also accompany these signals. The diverse input modalities and their intermittent availability pose challenges for consistent motion capture and understanding. In this work, we present Ego4o (o for omni), a new framework for simultaneous human motion capture and understanding from multi-modal egocentric inputs. This method maintains performance with partial inputs while achieving better results when multiple modalities are combined. First, the IMU sensor inputs, the optional egocentric image, and text description of human motion are encoded into the latent space of a motion VQ-VAE. Next, the latent vectors are sent to the VQ-VAE decoder and optimized to track human motion. When motion descriptions are unavailable, the latent vectors can be input into a multi-modal LLM to generate human motion descriptions, which can further enhance motion capture accuracy. Quantitative and qualitative evaluations demonstrate the effectiveness of our method in predicting accurate human motion and high-quality motion descriptions.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://zielon.github.io/synshot/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_SynShot.png" alt="SynShot" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+SynShot - Synthetic Prior for Few-Shot Drivable Head Avatar Inversion
+            </h2><div class="publication_authors">
+Wojciech Zielonka, Stephan J. Garbin, Alexandros Lattas,
+George Kopanas, Paulo Gotardo, Thabo Beeler, Justus Thies, Timo Bolkart
+            </div><div class="publication_venue">
+CVPR 2025
+            </div><div class="publication_abstract">
+We present SynShot, a novel method for the few-shot inversion of a drivable head avatar based on a synthetic prior. We tackle two major challenges. First, state-of-the-art monocular avatar models struggle to generalize to new views and expressions, lacking a strong prior and often overfitting to a specific viewpoint distribution. Second, training a controllable 3D generative network requires a large number of diverse sequences, for which pairs of images and high-quality tracked meshes are not always available. Moreover, under General Data Protection Regulation, the storage and use of real datasets are highly regulated. Users are often required to delete trained models and remove any derivatives of the real data within a specified time frame if a subject from the dataset withdraws their consent, as guaranteed by law. This process is very cumbersome from a data management perspective, whereas synthetic datasets are not subject to these regulations.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://github.com/mit-gfx/VLMaterial';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_VLMaterial.jpg" alt="VLMaterial" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+VLMaterial: Procedural Material Generation with Large Vision-Language Models
+            </h2><div class="publication_authors">
+Beichen Li, Rundi Wu, Armando Solar-Lezama, Changxi Zheng, Liang Shi, Bernd Bickel, Wojciech Matusik
+            </div><div class="publication_venue">
+ICLR 2025
+            </div><div class="publication_abstract">
+Procedural materials, represented as functional node graphs, are ubiquitous in computer graphics for photorealistic material appearance design. They allow users to perform intuitive and precise editing to achieve desired visual appearances. However, creating a procedural material given an input image requires professional knowledge and significant effort. In this work, we leverage the ability to convert procedural materials into standard Python programs and fine-tune a large pre-trained vision-language model (VLM) to generate such programs from input images. To enable effective fine-tuning, we also contribute an open-source procedural material dataset and propose to perform program-level augmentation by prompting another pre-trained large language model (LLM). Through extensive evaluation, we show that our method outperforms previous methods on both synthetic and real-world examples.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://arxiv.org/abs/2502.19318';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_3DGSVolumeRender.png" alt="3DGSVolumeRender" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Does 3D Gaussian Splatting Need Accurate Volumetric Rendering?
+            </h2><div class="publication_authors">
+A. Celarek, G. Kopanas, G. Drettakis, M. Wimmer, B. Kerbl
+            </div><div class="publication_venue">
+Eurographics 2025
+            </div><div class="publication_abstract">
+Since its introduction, 3D Gaussian Splatting (3DGS) has become an important reference method for learning 3D representations of a captured scene, allowing real-time novel-view synthesis with high visual quality and fast training times. Neural Radiance Fields (NeRFs), which preceded 3DGS, are based on a principled ray-marching approach for volumetric rendering.
+In contrast, while sharing a similar image formation model with NeRF, 3DGS uses a hybrid rendering solution that builds on
+the strengths of volume rendering and primitive rasterization. A crucial benefit of 3DGS is its performance, achieved through
+a set of approximations, in many cases with respect to volumetric rendering theory. A naturally arising question is whether
+replacing these approximations with more principled volumetric rendering solutions can improve the quality of 3DGS. In this
+paper, we present an in-depth analysis of the various approximations and assumptions used by the original 3DGS solution.
+We demonstrate that, while more accurate volumetric rendering can help for low numbers of primitives, the power of efficient
+optimization and the large number of Gaussians allows 3DGS to outperform volumetric rendering despite its approximations.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/Pixels2Points/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_Pixels2Points.png" alt="Pixels2Points" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Fusing 2D and 3D Features for Facial Skin Segmentation
+            </h2><div class="publication_authors">
+Victoria Yue Chen, Daoye Wang, Stephan Garbin, Jan Bednarik, Sebastian Winberg, Timo Bolkart, Thabo Beeler
+            </div><div class="publication_venue">
+Eurographics Shorts 2025
+            </div><div class="publication_abstract">
+Face registration deforms a template mesh to closely fit a 3D face scan, the quality of which commonly degrades in non-skin re-
+gions (e.g., hair, beard, accessories), because the optimized template-to-scan distance pulls the template mesh towards the noisy
+
+scan surface. Improving registration quality requires a clean separation of skin and non-skin regions on the scan mesh. Exist-
+ing image-based (2D) or scan-based (3D) segmentation methods however perform poorly. Image-based segmentation outputs
+
+multi-view inconsistent masks, and they cannot account for scan inaccuracies or scan-image misalignment, while scan-based
+methods suffer from lower spatial resolution compared to images. In this work, we introduce a novel method that accurately
+separates skin from non-skin geometry on 3D human head scans. For this, our method extracts features from multi-view images
+
+using a frozen image foundation model and aggregates these features in 3D. These lifted 2D features are then fused with 3D ge-
+ometric features extracted from the scan mesh, to then predict a segmentation mask directly on the scan mesh. We show that our
+
+segmentations improve the registration accuracy over pure 2D or 3D segmentation methods by 8.89% and 14.3%, respectively.
+Although trained only on synthetic data, our model generalizes well to real data.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	  
+    </ul>
+</div>
+
+<div class="year_section">
 <a name='2024'></a>
 <h2 class="year_title">2024</h2>
-    <ul class="publications">
-
+	<ul class="publications">
 <!--  Entry -->	
       <li class="publication_entry">
         <div class="publication" onclick="location.href='https://syntec-research.github.io/GroomCap/';" style="cursor: pointer;">
@@ -40,7 +265,7 @@ GroomCap: Prior-Free High-Quality Hair Capture
 Yuxiao Zhou, Menglei Chai, Daoye Wang, Sebastian Winberg,
 Erroll Wood, Kripasindhu Sarkar, Markus Gross, Thabo Beeler
             </div><div class="publication_venue">
-SIGASIA 2024
+SIGASIA 2024 <b>(Best Paper Award)</b>
             </div><div class="publication_abstract">
 Despite recent advances in multi-view hair reconstruction, achieving strand-level precision remains a significant challenge due to inherent limitations in existing capture pipelines. We introduce GroomCap, a novel multi-view hair capture method that reconstructs faithful and high-fidelity hair geometry without relying on external data priors. To address the limitations of conventional reconstruction algorithms, we propose a neural implicit representation for hair volume that encodes high-resolution 3D orientation and occupancy from input views. This implicit hair volume is trained with a new volumetric 3D orientation rendering algorithm, coupled with 2D orientation distribution supervision, to effectively prevent the loss of structural information caused by undesired orientation blending. We further propose a Gaussian-based hair optimization strategy to refine the traced hair strands with a novel chained Gaussian representation, utilizing direct photometric supervision from images. Our results demonstrate that GroomCap is able to capture high-quality hair geometries that are not only more precise and detailed than existing methods but also versatile enough for a range of applications.
             </div>
