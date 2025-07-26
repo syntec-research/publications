@@ -27,6 +27,69 @@
 <a name='2025'></a>
 <h2 class="year_title">2025</h2>
     <ul class="publications">
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://suikasibyl.github.io/vvmc/#/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_VectorValuedMC.png" alt="Vector Valued Monte Carlo" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Vector-Valued Monte Carlo Integration Using Ratio Control Variates
+            </h2><div class="publication_authors">
+Haolin Lu,  Delio Vicini,  Wesley Chang,  Tzu-Mao Li
+            </div><div class="publication_venue">
+SIGGRAPH 2025 <b>(Best Paper Award)</b>
+            </div><div class="publication_abstract">
+Variance reduction techniques are widely used for reducing the noise of Monte Carlo integration. However, these techniques are typically designed with the assumption that the integrand is scalar-valued. Recognizing that rendering and inverse rendering broadly involve vector-valued integrands, we identify the limitations of classical variance reduction methods in this context. To address this, we introduce ratio control variates, an estimator that leverages a ratio-based approach instead of the conventional difference-based control variates. Our analysis and experiments demonstrate that ratio control variables can significantly reduce the mean squared error of vector-valued integration compared to existing methods and are broadly applicable to various rendering and inverse rendering tasks.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	  
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/UVGA/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_TeGa.png" alt="TeGa" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+TeGA: Texture Space Gaussian Avatars for High-Resolution DynamicHead Modeling
+            </h2><div class="publication_authors">
+Gengyan Li, Paulo Gotardo, Timo Bolkart, Stephan Garbin, Kripasindhu Sarkar, Abhimitra Meka, Alexandros Lattas, Thabo Beeler
+            </div><div class="publication_venue">
+SIGGRAPH 2025
+            </div><div class="publication_abstract">
+Sparse volumetric reconstruction and rendering via 3D Gaussian splatting have recently enabled animatable 3D head avatars that are rendered under arbitrary viewpoints with impressive photorealism. Today, such photoreal avatars are seen as a key component in emerging applications in telepresence, extended reality, and entertainment. Building a photoreal avatar requires estimating the complex non-rigid motion of different facial components as seen on input video images; due to inaccurate motion estimation, animatable models typically present a loss of fidelity and detail when compared to their non-animatable counterparts, built from an individual facial expression. Also, recent state-of-the-art models are often affected by memory limitations that reduce the number of 3D Gaussians used for modeling, leading to lower detail and quality. To address these problems, we present a new high-detail 3D head avatar model that improves upon the state of the art, largely increasing the number of 3D Gaussians and modeling quality for rendering at 4K resolution. Our high-quality model is reconstructed from multiview input video and builds on top of a mesh-based 3D morphable model, which provides a coarse deformation layer for the head. Photoreal appearance is modelled by 3D Gaussians embedded within the continuous UVD tangent space of this mesh, allowing for more effective densification where most needed. Additionally, these Gaussians are warped by a novel UVD deformation field to capture subtle, localized motion. Our key contribution is the novel deformable Gaussian encoding and overall fitting procedure that allows our head model to preserve appearance detail, while capturing facial motion and other transient high-frequency features such as skin wrinkling.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+	
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://weiphil.github.io/portfolio/practical_reconstruction';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_Practical.png" alt="Practical Inverse Rendering" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Practical Inverse Rendering of Textured and Translucent Appearance
+            </h2><div class="publication_authors">
+Philippe Weier, Jeremy Riviere, Ruslan Guseinov, Stephan Garbin, Philipp Slusallek, Bernd Bickel, Thabo Beeler, Delio Vicini
+            </div><div class="publication_venue">
+SIGGRAPH 2025
+            </div><div class="publication_abstract">
+Inverse rendering has emerged as a standard tool to reconstruct the parameters of appearance models from images (e.g., textured BSDFs). In this work, we present several novel contributions motivated by the practical challenges of recovering high-resolution surface appearance textures, including spatially-varying subsurface scattering parameters.
+First, we propose Laplacian mipmapping, which combines differentiable mipmapping and a Laplacian pyramid representation into an effective preconditioner. This seemingly simple technique significantly improves the quality of recovered surface textures on a set of challenging inverse rendering problems. Our method automatically adapts to the render and texture resolutions, only incurs moderate computational cost and achieves better quality than prior work while using fewer hyperparameters. Second, we introduce a specialized gradient computation algorithm for textured, path-traced subsurface scattering, which facilitates faithful reconstruction of translucent materials. By using path tracing, we enable the recovery of complex appearance while avoiding the approximations of the previously used diffusion dipole methods. Third, we demonstrate the application of both these techniques to reconstructing the textured appearance of human faces from sparse captures. Our method recovers high-quality relightable appearance parameters that are compatible with current production renderers.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
 	
 <!--  Entry -->	
       <li class="publication_entry">
