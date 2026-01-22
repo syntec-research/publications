@@ -27,6 +27,29 @@
 <a name='2025'></a>
 <h2 class="year_title">2025</h2>
     <ul class="publications">
+    
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://suikasibyl.github.io/vvmc/#/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_StochasticSplats.png" alt="Stochastic Splats" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting
+            </h2><div class="publication_authors">
+Shakiba Kheradmand, Delio Vicini, George Kopanas, Dmitry Lagun, Kwang Moo Yi, Mark Matthews, Andrea Tagliasacchi
+            </div><div class="publication_venue">
+ICCV 2025
+            </div><div class="publication_abstract">
+3D Gaussian splatting (3DGS) is a popular radiance field method, with many application-specific extensions. Most variants rely on the same core algorithm: depth-sorting of Gaussian splats then rasterizing in primitive order. This ensures correct alpha compositing, but can cause rendering artifacts due to built-in approximations. Moreover, for a fixed representation, sorted rendering offers little control over render cost and visual fidelity. For example, and counter-intuitively, rendering a lower-resolution image is not necessarily faster. In this work, we address the above limitations by combining 3D Gaussian splatting with stochastic rasterization. Concretely, we leverage an unbiased Monte Carlo estimator of the volume rendering equation. This removes the need for sorting, and allows for accurate 3D blending of overlapping Gaussians. The number of Monte Carlo samples further imbues 3DGS with a way to trade off computation time and quality. We implement our method using OpenGL shaders, enabling efficient rendering on modern GPU hardware. At a reasonable visual quality, our method renders more than four times faster than sorted rasterization.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+
 <!--  Entry -->	
       <li class="publication_entry">
         <div class="publication" onclick="location.href='https://suikasibyl.github.io/vvmc/#/';" style="cursor: pointer;">
