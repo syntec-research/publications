@@ -28,9 +28,31 @@
 <h2 class="year_title">2025</h2>
     <ul class="publications">
     
+    
 <!--  Entry -->	
       <li class="publication_entry">
-        <div class="publication" onclick="location.href='https://suikasibyl.github.io/vvmc/#/';" style="cursor: pointer;">
+        <div class="publication" onclick="location.href='https://github.com/davidweidawang/GIGA-ToF';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_GIGA.png" alt="GIGA" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Consistent Time-of-Flight Depth Denoising via Graph-Informed Geometric Attention
+            </h2><div class="publication_authors">
+Weida Wang, Changyong He, Jin Zeng, Di Qiu
+            </div><div class="publication_venue">
+ICCV 2025
+            </div><div class="publication_abstract">
+Depth images captured by Time-of-Flight (ToF) sensors are prone to noise, requiring denoising for reliable downstream applications. Previous works either focus on single-frame processing, or perform multi-frame processing without considering depth variations at corresponding pixels across frames, leading to undesirable temporal inconsistency and spatial ambiguity. In this paper, we propose a novel ToF depth denoising network leveraging motion-invariant graph fusion to simultaneously enhance temporal stability and spatial sharpness. Specifically, despite depth shifts across frames, graph structures exhibit temporal self-similarity, enabling cross-frame geometric attention for graph fusion. Then, by incorporating an image smoothness prior on the fused graph and data fidelity term derived from ToF noise distribution, we formulate a maximum a posterior problem for ToF denoising. Finally, the solution is unrolled into iterative filters whose weights are adaptively learned from the graph-informed geometric attention, producing a high-performance yet interpretable network. Experimental results demonstrate that the proposed scheme achieves state-of-the-art performance in terms of accuracy and consistency on synthetic DVToF dataset and exhibits robust generalization on the real Kinectv2 dataset.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+    
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://ubc-vision.github.io/stochasticsplats/';" style="cursor: pointer;">
           <div class="publication_image">
             <img src="./images/2025_StochasticSplats.png" alt="Stochastic Splats" />
           </div>
