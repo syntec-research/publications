@@ -15,6 +15,7 @@
 <body>
 	<table><tr><td rowspan="2" style="vertical-align: middle; padding-top: 6px;"></td><td style="padding-left: 10px;">
 	<H1>Publication Archive</h1></td></tr><tr><td style="padding-left: 10px;">
+		<button onclick="location.href='#2026';">2026</button>
 		<button onclick="location.href='#2025';">2025</button>
 		<button onclick="location.href='#2024';">2024</button>
 		<button onclick="location.href='#2023';">2023</button>
@@ -23,11 +24,40 @@
 		<button onclick="location.href='#2020';">2020</button>
 	</td></tr></table>
 <div class="content">
+
+<div class="year_section">
+<a name='2026'></a>
+<h2 class="year_title">2026</h2>
+    <ul class="publications">
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/LegacyAvatars/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/method.png" alt="LegacyAvatars" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+LegacyAvatars: Volumetric Face Avatars For Traditional Graphics Pipelines
+            </h2><div class="publication_authors">
+Safa C. Medin, Gengyan Li, Ziqian Bai, Ruofei Du, Leonhard Helminger, Yinda Zhang, Stephan Garbin, Philip Davidson, Gregory W. Wornell, Thabo Beeler, Abhimitra Meka
+            </div><div class="publication_venue">
+3DV 2026
+            </div><div class="publication_abstract">
+We introduce a novel representation for efficient classical rendering of photorealistic 3D face avatars. Leveraging recent advances in radiance fields anchored to parametric face models, our approach achieves controllable volumetric rendering of complex facial features, including hair, skin, and eyes. At enrollment time, we learn a set of radiance manifolds in 3D space to extract an explicit layered mesh, along with appearance and warp textures. During deployment, this allows us to control and animate the face through simple linear blending and alpha compositing of textures over a static mesh. This explicit representation also enables the generated avatar to be efficiently streamed online and then rendered using classical mesh and shader-based rendering on legacy graphics platforms, eliminating the need for any custom engineering or integration.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+    </ul>
+</div>
+
 <div class="year_section">
 <a name='2025'></a>
 <h2 class="year_title">2025</h2>
-    <ul class="publications">
-
+	<ul class="publications">
 
 <!--  Entry -->	
       <li class="publication_entry">
