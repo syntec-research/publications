@@ -119,7 +119,26 @@ This paper introduces MovieCORE, a novel video question answering (VQA) dataset 
       </li>
 <!-- END Entry -->
 
-
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/3dpr/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2025_3DPR.png" alt="ACL_DCO" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+3DPR: Single Image 3D Portrait Relighting with Generative Priors
+            </h2><div class="publication_authors">
+Pramod Rao, Abhimitra Meka, Xilong Zhou, Gereon Fox, Mallikarjun B R, Fangneng Zhan, Tim Weyrich, Bernd Bickel, Hanspeter Pfister, Wojciech Matusik, Thabo Beeler, Mohamed Elgharib, Marc Habermann, Christian Theobalt
+			</div><div class="publication_venue">
+SIGGRAPH Asia 2025
+            </div><div class="publication_abstract">
+Rendering novel, relit views of a human head, given a monocular portrait image as input, is an inherently underconstrained problem. The traditional graphics solution is to explicitly decompose the input image into geometry, material and lighting via differentiable rendering; but this is constrained by the multiple assumptions and approximations of the underlying models and parameterizations of these scene components. We propose 3DPR, an image-based relighting model that leverages generative priors learnt from multi-view One-Light-at-A-Time (OLAT) images captured in a light stage. We introduce a new diverse and large-scale multi-view 4K OLAT dataset of 139 subjects to learn a high-quality prior over the distribution of high-frequency face reflectance. We leverage the latent space of a pre-trained generative head model that provides a rich prior over face geometry learnt from in-the-wild image datasets. The input portrait is first embedded in the latent manifold of such a model through an encoder-based inversion process. Then a novel triplane-based reflectance network trained on our lightstage data is used to synthesize high-fidelity OLAT images to enable image-based relighting. Our reflectance network operates in the latent space of the generative head model, crucially enabling a relatively small number of lightstage images to train the reflectance model. Combining the generated OLATs according to a given HDRI environment maps yields physically accurate environmental relighting results. Through quantitative and qualitative evaluations, we demonstrate that 3DPR outperforms previous methods, particularly in preserving identity and in capturing lighting effects such as specularities, self-shadows, and subsurface scattering.            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+		
 
 <!--  Entry -->	
       <li class="publication_entry">
