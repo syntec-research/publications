@@ -29,6 +29,25 @@
 <a name='2026'></a>
 <h2 class="year_title">2026</h2>
     <ul class="publications">
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://malteprinzler.github.io/projects/match/index.html';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_MATCH.png" alt="MATCH" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Feed-forward Gaussian Registration for Head Avatar Creation and Editing
+            </h2><div class="publication_authors">
+Malte Prinzler, Paulo Gotardo, Siyu Tang, Timo Bolkart
+           </div><div class="publication_venue">
+CVPR 2026
+            </div><div class="publication_abstract">
+We present MATCH (Multi-view Avatars from Topologically Corresponding Heads), a multi-view Gaussian registration method for high-quality head avatar creation and editing. State-of-the-art multi-view head avatar methods require time-consuming head tracking followed by expensive avatar optimization, often resulting in a total creation time of more than one day. MATCH, in contrast, directly predicts Gaussian splat textures in correspondence from calibrated multi-view images in just 0.5 seconds per frame, without requiring data preprocessing. The learned intra-subject correspondence across frames enables fast creation of personalized head avatars, while correspondence across subjects supports applications such as expression transfer, optimization-free tracking, semantic editing, and identity interpolation. We establish these correspondences end-to-end using a transformer-based model that predicts Gaussian splat textures in the fixed UV layout of a template mesh. To achieve this, we introduce a novel registration-guided attention block, where each UV-map token attends exclusively to image tokens depicting its corresponding mesh region. This design improves efficiency and performance compared to dense cross-view attention. MATCH outperforms existing methods in novel-view synthesis, geometry registration, and head avatar generation, while making avatar creation 10 times faster than the closest competing baseline.			</div>
+        </div>
+      </li>
+<!-- END Entry -->
 		
 <!--  Entry -->	
       <li class="publication_entry">
