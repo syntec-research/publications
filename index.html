@@ -30,12 +30,31 @@
 <h2 class="year_title">2026</h2>
     <ul class="publications">
 
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://onlinelibrary.wiley.com/doi/10.1111/cgf.70404';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_HARAP.png" alt="HRAP" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Hierarchical Optimization of the As-Rigid-As-Possible Energy
+            </h2><div class="publication_authors">
+Hendrik Meyer, Bernd Bickel, Marc Alexa
+           </div><div class="publication_venue">
+3DV 2026
+            </div><div class="publication_abstract">
+The As-Rigid-As-Possible (ARAP) energy [SA07] has become a versatile ingredient in various geometry processing and machine learning methods. The classic method for its minimization is a block coordinate descent, alternating between local rotation estimation and a global linear solve, which converges slowly for large problem instances. We develop and evaluate a multi-level scheme targeted specifically at the optimization of the ARAP energy on large meshes. The main points of our approach are (1) a mesh hierarchy that provides the necessary control over topology while being fast, (2) methods for upsampling the rotations from coarser to finer levels of the hierarchy, and (3) using direct solvers for the linear system. The resulting optimization, remarkably, yields smaller energy while typically being faster on a large number of test cases. The hierarchical approach generalizes to related energies and compares favorably to acceleration schemes such as ADMM, which, in turn, also profit from the hierarchical approach.			</div>
+        </div>
+      </li>
+<!-- END Entry -->	
+				
 
 <!--  Entry -->	
       <li class="publication_entry">
         <div class="publication" onclick="location.href='https://wojciechzielonka.com/how-to-build-digital-humans/';" style="cursor: pointer;">
           <div class="publication_image">
-            <img src="./images/2026_Prior2Avatar.png" alt="2026_Prior2Avatar" />
+            <img src="./images/2026_Priors2Avatar.png" alt="2026_Priors2Avatar" />
           </div>
           <div class="publication_content">
             <h2 class="publication_title">
@@ -45,7 +64,8 @@ Wojciech Zielonka, Tobias Kirschstein, Timo Bolkart, Simon Giebenhain, Vanessa S
            </div><div class="publication_venue">
 Eurographics STAR 2026
             </div><div class="publication_abstract">
-This state-of-the-art report provides an overview of controllable 3D human avatar creation. We describe current 3D avatar systems, which typically consist of three stages: (i) learning priors of human appearance and motion, (ii) creating a personalized avatar, and (iii) animating the avatar. To limit the scope, we focus on the prior learning and avatar creation stages. We define current avatar representations and introduce a taxonomy that categorizes existing work along multiple axes, including body regions and employed priors. We review methods for full-body and head avatars, as well as layered representations that decompose the body into components such as hands, hair, and garments. Finally, we outline common underlying principles, reference key literature for newcomers, and discuss open challenges and future research directions.      </li>
+This state-of-the-art report provides an overview of controllable 3D human avatar creation. We describe current 3D avatar systems, which typically consist of three stages: (i) learning priors of human appearance and motion, (ii) creating a personalized avatar, and (iii) animating the avatar. To limit the scope, we focus on the prior learning and avatar creation stages. We define current avatar representations and introduce a taxonomy that categorizes existing work along multiple axes, including body regions and employed priors. We review methods for full-body and head avatars, as well as layered representations that decompose the body into components such as hands, hair, and garments. Finally, we outline common underlying principles, reference key literature for newcomers, and discuss open challenges and future research directions.      
+			</li>
 <!-- END Entry -->	
 			  
 <!--  Entry -->	
@@ -62,7 +82,8 @@ Jalees Nehvi, Timo Bolkart, Thabo Beeler, Justus Thies
            </div><div class="publication_venue">
 Faces & Gestures 2026
             </div><div class="publication_abstract">
-The human face is central to communication. For immersive applications, the digital presence of a person should mirror the physical reality, capturing the users idiosyncrasies and detailed facial expressions. However, current 3D head avatar methods often struggle to faithfully reproduce the identity and facial expressions, despite having multi-view data or learned priors. Learning priors that capture the diversity of human appearances, especially, for regions with highly person-specific features, like the mouth and teeth region is challenging as the underlying training data is limited. In addition, many of the avatar methods are purely relying on 3D morphable model-based expression control which strongly limits expressivity. To address these challenges, we are introducing 3DRealHead, a few-shot head avatar reconstruction method with a novel expression control signal that is extracted from a monocular video stream of the subject. Specifically, the subject can take a few pictures of themselves, recover a 3D head avatar and drive it with a consumer-level webcam. The avatar reconstruction is enabled via a novel few-shot inversion process of a 3D human head prior which is represented as a Style U-Net that emits 3D Gaussian primitives which can be rendered under novel views. The prior is learned on the NeRSemble dataset. For animating the avatar, the U-Net is conditioned on 3DMM-based facial expression signals, as well as features of the mouth region extracted from the driving video. These additional mouth features allow us to recover facial expressions that cannot be represented by the 3DMM leading to a higher expressivity and closer resemblance to the physical reality. We compare our proposed method against one-shot prior-based and state-of-the-art monocular avatar approaches showing that our approach achieves competitive visual quality and expressive mouth articulation while requiring only a few input frames, in contrast to video-based methods that rely on dense per-identity training data.        </div>
+The human face is central to communication. For immersive applications, the digital presence of a person should mirror the physical reality, capturing the users idiosyncrasies and detailed facial expressions. However, current 3D head avatar methods often struggle to faithfully reproduce the identity and facial expressions, despite having multi-view data or learned priors. Learning priors that capture the diversity of human appearances, especially, for regions with highly person-specific features, like the mouth and teeth region is challenging as the underlying training data is limited. In addition, many of the avatar methods are purely relying on 3D morphable model-based expression control which strongly limits expressivity. To address these challenges, we are introducing 3DRealHead, a few-shot head avatar reconstruction method with a novel expression control signal that is extracted from a monocular video stream of the subject. Specifically, the subject can take a few pictures of themselves, recover a 3D head avatar and drive it with a consumer-level webcam. The avatar reconstruction is enabled via a novel few-shot inversion process of a 3D human head prior which is represented as a Style U-Net that emits 3D Gaussian primitives which can be rendered under novel views. The prior is learned on the NeRSemble dataset. For animating the avatar, the U-Net is conditioned on 3DMM-based facial expression signals, as well as features of the mouth region extracted from the driving video. These additional mouth features allow us to recover facial expressions that cannot be represented by the 3DMM leading to a higher expressivity and closer resemblance to the physical reality. We compare our proposed method against one-shot prior-based and state-of-the-art monocular avatar approaches showing that our approach achieves competitive visual quality and expressive mouth articulation while requiring only a few input frames, in contrast to video-based methods that rely on dense per-identity training data.        
+			</div>
       </li>
 <!-- END Entry -->		
 		
