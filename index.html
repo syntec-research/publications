@@ -52,6 +52,26 @@ We present CUBE (Control-based Unified B-spline Encoding), a new geometric repre
 		
 <!--  Entry -->	
       <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://euleriansplatting.github.io/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_EGS.png" alt="EGS" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Eulerian Gaussian Splatting using Hashed Probability Pyramids
+            </h2><div class="publication_authors">
+Mia Gaia Polansky, George Kopanas, Stephan Garbin, Todd Zickler, Dor Verbin
+           </div><div class="publication_venue">
+CVPR 2026
+            </div><div class="publication_abstract">
+We introduce a probabilistic splat-based radiance field framework that retains the fast rasterization and test-time efficiency of 3D Gaussian Splatting (3DGS) while replacing heuristic primitive manipulation with gradient-based optimization of a volumetric probability density. Rather than relocating, splitting, or culling Gaussians via hand-tuned densification (e.g., ADC), we treat primitive locations as samples drawn from a persistent, learnable density. We instantiate this density using a novel, memory-efficient multi-scale hierarchical grid that enables end-to-end gradient-based optimization. To stabilize the optimization, we derive an unbiased gradient estimator with control variates that markedly reduces variance. By allowing probability mass to flow to where the loss demands, our framework eliminates brittle priors and naturally explores the volume, achieving state-of-the-art reconstruction quality on mip-NeRF 360 while preserving 3DGS-level rendering speed.			</div>
+        </div>
+      </li>
+<!-- END Entry -->
+		
+		
+<!--  Entry -->	
+      <li class="publication_entry">
         <div class="publication" onclick="location.href='https://malteprinzler.github.io/projects/match/index.html';" style="cursor: pointer;">
           <div class="publication_image">
             <img src="./images/2026_MATCH.png" alt="MATCH" />
