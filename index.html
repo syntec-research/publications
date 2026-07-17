@@ -10,25 +10,155 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./main.css?v=23">
 </head>
 <body>
-	<table><tr><td rowspan="2" style="vertical-align: middle; padding-top: 6px;"></td><td style="padding-left: 10px;">
-	<H1>Publication Archive</h1></td></tr><tr><td style="padding-left: 10px;">
-		<button onclick="location.href='#2026';">2026</button>
-		<button onclick="location.href='#2025';">2025</button>
-		<button onclick="location.href='#2024';">2024</button>
-		<button onclick="location.href='#2023';">2023</button>
-		<button onclick="location.href='#2022';">2022</button>
-		<button onclick="location.href='#2021';">2021</button>
-		<button onclick="location.href='#2020';">2020</button>
-	</td></tr></table>
+  <!-- Top Navigation Bar -->
+  <nav class="site_navbar">
+    <div class="navbar_container">
+      <a href="./index.html?view=grid" class="navbar_logo" style="text-decoration: none; color: var(--text-color);">
+      </a>
+      <div class="top_nav">
+        <a href="./index.html?view=grid" id="nav-home" class="active">Home</a>
+        <a href="./news.html">News</a>
+        <a href="./index.html?view=list" id="nav-pub">Publications</a>
+        <a href="./resources.html">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title Banner -->
+  <header class="hero_section">
+    <video autoplay loop muted playsinline class="hero_video_bg">
+      <source src="./images/Generated_artistic_figure_side_pingpong.mp4" type="video/mp4">
+    </video>
+    <div class="hero_container">
+      <div class="hero_text">
+        <h1 class="hero_title">Synthetic Technology<br>and Digital Humans</h1>
+        <p class="hero_subtitle" style="font-size: 2.2em; font-weight: 500; color: #5f6368; margin-top: 20px; line-height: 1.2;">Research Archive</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Announcements Section (Prominent) -->
+  <section id="announcements_section" style="max-width: 1240px; margin: 0 auto; padding: 50px 20px 10px 20px;">
+    <h2 style="font-family: 'Google Sans', sans-serif; font-size: 32px; font-weight: 700; margin-top: 0; margin-bottom: 25px;">Announcements</h2>
+    <div class="prominent_announcements">
+       <!-- Dynamically populated by news_data.js -->
+    </div>
+  </section>
+
+  <!-- Interactive Control Panel -->
+  <section class="control_panel" style="margin-top: 40px; border-top: 1px solid var(--border-color);">
+    <div class="control_container">
+      
+      <!-- Integrated Publications Header -->
+      <h2 style="font-family: 'Google Sans', sans-serif; font-size: 26px; font-weight: 700; margin: 0; margin-right: auto; padding-right: 20px; white-space: nowrap; color: var(--text-color);">Publications</h2>
+
+      <!-- Search Input -->
+      <div class="search_wrapper">
+        <input type="text" id="search-input" placeholder="Search title, author, abstract...">
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="filter_pills">
+        <button class="filter-pill active" data-filter="all">All Research</button>
+        <button class="filter-pill" data-filter="avatars">Avatars & Digital Humans</button>
+        <button class="filter-pill" data-filter="splatting">Gaussian Splatting</button>
+        <button class="filter-pill" data-filter="rendering">Neural Rendering</button>
+        <button class="filter-pill" data-filter="simulation">Simulation</button>
+        <button class="filter-pill" data-filter="optimization">Optimization & Math</button>
+      </div>
+
+      <!-- Layout View Switcher -->
+      <div class="view_switcher">
+        <button id="view-grid-btn" class="active">Grid View</button>
+        <button id="view-list-btn">List View</button>
+      </div>
+
+
+      <!-- Year Quicklinks -->
+      <div class="year_quicklinks">
+        <button onclick="location.href='#2026';">2026</button>
+        <button onclick="location.href='#2025';">2025</button>
+        <button onclick="location.href='#2024';">2024</button>
+        <button onclick="location.href='#2023';">2023</button>
+        <button onclick="location.href='#2022';">2022</button>
+        <button onclick="location.href='#2021';">2021</button>
+        <button onclick="location.href='#2020';">2020</button>
+      </div>
+
+    </div>
+  </section>
 <div class="content">
 
 <div class="year_section">
 <a name='2026'></a>
 <h2 class="year_title">2026</h2>
     <ul class="publications">
+
+	 
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://syntec-research.github.io/SHELLS/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_SHELLS.jpg" alt="SHELLS" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Topologically Consistent Multi-view 3D Head Reconstruction via Coarse-Guided Layered Surface Sampling
+            </h2><div class="publication_authors">
+Timo Bolkart, Daoye Wang, Prashanth Chandran
+            </div><div class="publication_venue">
+SIGGRAPH 2026
+            </div><div class="publication_abstract">
+We present SHELLS (Semantic Head Estimation via Layered Local Sampling), an efficient feed-forward framework for 3D head reconstruction in dense semantic correspondence from multi-view images. State-of-the-art methods typically refine vertices independently using localized feature volumes. This couples memory-intensive feature sampling to the output mesh resolution, limiting scalability for dense topologies (&ge; 10k vertices) and producing noisy surfaces due to a lack of global context. In contrast, SHELLS decouples feature extraction from mesh resolution via a hierarchical sampling strategy. We extract multi-view features using a DinoV2 backbone with LoRA adaptation, projectively sample a sparse global feature cloud, and predict an intermediate coarse mesh. This coarse prior guides the construction of layered, surface-aware sampling shells that serve as a discrete search space for the final reconstruction. By utilizing a shared transformer architecture, SHELLS maintains global surface consistency while requiring only 12% of the GPU memory of volume-based approaches. Experimental results show that SHELLS reduces median registration error by 21% &ndash; 29% and achieves a 3.5&times; speedup, predicting 18k-vertex meshes in 0.08 seconds. Notably, our model is trained exclusively on synthetic data yet generalizes effectively to real-world captures, eliminating the need for the costly, pre-registered multi-view datasets common in prior work.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://rgl.epfl.ch/publications/Zhang2026Cache';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_RadianceCache.jpg" alt="Radiance Caching for Differentiable Path Tracing" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Radiance Caching for Differentiable Path Tracing
+            </h2><div class="publication_authors">
+Ziyi Zhang, Delio Vicini, Sebastian Winberg, Stephan Garbin, Wenzel Jakob
+            </div><div class="publication_venue">
+SIGGRAPH 2026
+            </div><div class="publication_abstract">
+Differentiable path tracing offers a principled route to recovering physical material and lighting parameters, but the combination of high variance and poor numerical conditioning often makes it too brittle to use in practice. This is especially the case when lighting is altogether unknown, or when the scene contains complex light transport effects. Prior work recently showed that the variance reduction provided by a radiance cache can alleviate these challenges. We revisit the combination of inverse rendering and radiance caching with a twist, by introducing a spatial blending field that locally interpolates between the cache and standard unbiased estimators. Recursive application of this idea yields a rich design space of evaluation strategies and inter-estimator consistency losses; we map this space and identify effective components. A surprising property of the resulting algorithm is that it can accurately recover material parameters even when the lighting is not uniquely identifiable from the observations. Our experiments demonstrate significant improvements in speed and robustness over prior work, making a strong case for including radiance caching as a standard component of future physically based inverse rendering systems.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/EgoRelight/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_EgoRelight.png?v=2" alt="EgoRelight" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+EgoRelight: Egocentric Human Capture and Illumination Recovery for Relightable and Photoreal Avatar Rendering
+            </h2><div class="publication_authors">
+Jianchun Chen, Yinda Zhang, Rohit Pandey, Thabo Beeler, Marc Habermann, Christian Theobalt
+            </div><div class="publication_venue">
+SIGGRAPH 2026
+            </div><div class="publication_abstract">
+Mixed Reality (MR) headsets promise a future of immersive telepresence where virtual humans blend indistinguishably into their real or virtual surroundings. Achieving this vision requires a method capable of capturing a user's motion, estimating their appearance under novel lighting, and understanding the surrounding environment -- all from the constrained viewpoint of a head-mounted display (HMD). Existing approaches treat these as isolated problems: they either focus on driving avatars with baked-in lighting or rely on complex studio setups for relighting. In this paper, we present EgoRelight, a holistic framework for egocentric telepresence that simultaneously captures full-body human performance, synthesizes photorealistic and relightable appearance, and estimates high dynamic range (HDR) environment maps from a single HMD. First, to ensure accurate motion and surface reconstruction, we propose an egocentric perception module that leverages stereo down-facing cameras to extract dense depth maps, which serve as robust geometric control signals to drive a mesh-based avatar. Second, we introduce a novel neural appearance model that learns to synthesize view-dependent specular and view-independent diffuse shading separately. By employing a specialized ray-sampling strategy, our model generalizes to unseen illumination without relying on restrictive analytical BRDF priors. Third, we enable seamless avatar integration into the physical world via a test-time inverse rendering process, which recovers an HDR environment map by matching the pre-trained avatar’s appearance to the live egocentric camera observations. We demonstrate the efficiency of our system through a social telepresence application, where remote users are coherently relit according to their local physical environment. Extensive experiments show that our individual components and the integrated system significantly outperform the best combinations of state-of-the-art baselines in both geometric accuracy and rendering as well as relighting fidelity.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->	 
 
 <!--  Entry -->	
       <li class="publication_entry">
@@ -1539,5 +1669,7 @@ The increasing demand for 3D content in augmented and virtual reality has motiva
 	</ul>
 </div>
 </div>
+<script src="./news_data.js?v=4"></script>
+<script src="./main.js?v=6"></script>
 </body>
 </html>
