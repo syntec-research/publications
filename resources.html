@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Resources - Synthetic Technology and Digital Humans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css?v=24">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="site_navbar">
+    <div class="navbar_container">
+      <a href="./index.html?view=grid" class="navbar_logo" style="text-decoration: none; color: var(--text-color);">
+      </a>
+      <div class="top_nav">
+        <a href="./index.html?view=grid" id="nav-home">Home</a>
+        <a href="./news.html">News</a>
+        <a href="./index.html?view=list" id="nav-pub">Publications</a>
+        <a href="./resources.html" class="active">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="resources-container content">
+    <h2 class="resources-heading">Resources & Open Source</h2>
+    <p class="resources-subheading">Explore source code, detailed documentation, datasets, and releases published by our research group.</p>
+    
+    <div class="resources-list">
+      
+      <!-- Resource Card 1: GNM -->
+      <div class="resource-card">
+        <div class="resource-image-container padded">
+           <img src="https://raw.githubusercontent.com/google/GNM/main/assets/readme/gnm_logo.png" alt="GNM Logo" class="resource-image">
+        </div>
+        <div class="resource-text">
+          <h3 class="resource-title">GNM (Generative aNthropometric Model)</h3>
+          <p class="resource-desc">Parametric 3D statistical human head and face geometry model providing fine-grained, disentangled control over identity, expressions, and head pose. The model contains controllable internal anatomy including eyeballs, teeth and tongue. Includes multi-framework backend support for NumPy, JAX, PyTorch, and TensorFlow, along with semantic parameter sampling.</p>
+          <a href="https://github.com/google/GNM" target="_blank" class="resource-btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Resource Card 2: hdMitsuba -->
+      <div class="resource-card">
+        <div class="resource-image-container">
+           <img src="https://raw.githubusercontent.com/google/hdmitsuba/main/docs/usdview_example.gif" alt="hdMitsuba Demo" class="resource-image">
+        </div>
+        <div class="resource-text">
+          <h3 class="resource-title">hdMitsuba</h3>
+          <p class="resource-desc">A robust USD Hydra render delegate that bridges the gap between rendering research and production pipelines by bringing <strong>Mitsuba 3</strong> into the Pixar OpenUSD ecosystem. It enables OpenUSD to render scenes directly using Mitsuba, supporting efficient incremental updates, advanced features like spectral and polarized rendering, and limitless extensibility for custom BSDFs and cameras.</p>
+          <a href="https://github.com/google/hdmitsuba" target="_blank" class="resource-btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Resource Card 3: Cafca Synthetic Dataset -->
+      <div class="resource-card">
+        <div class="resource-image-container">
+           <img src="./images/2024_Cafca.png" alt="Cafca Synthetic Dataset" class="resource-image">
+        </div>
+        <div class="resource-text">
+          <h3 class="resource-title">Cafca Synthetic Dataset</h3>
+          <p class="resource-desc">The Cafca synthetic dataset provides high-quality data for research related to High-Quality Animatable Relightable Avatars.</p>
+          <a href="https://github.com/syntec-research/Cafca/blob/main/Dataset.md" target="_blank" class="resource-btn">View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="./main.js?v=4"></script>
+</body>
+</html>

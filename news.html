@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>News - Synthetic Technology and Digital Humans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css?v=23">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="site_navbar">
+    <div class="navbar_container">
+      <a href="./index.html?view=grid" class="navbar_logo" style="text-decoration: none; color: var(--text-color);">
+      </a>
+      <div class="top_nav">
+        <a href="./index.html?view=grid" id="nav-home">Home</a>
+        <a href="./news.html" class="active">News</a>
+        <a href="./index.html?view=list" id="nav-pub">Publications</a>
+        <a href="./resources.html">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="content" style="max-width: 800px; margin: 0 auto; padding: 80px 20px;">
+    <h2 style="margin-bottom: 30px; font-size: 2.2em;">2026 Updates</h2>
+    <div id="news-page-container">
+      <!-- Dynamically populated by news_data.js -->
+    </div>
+  </div>
+  <script src="./news_data.js?v=4"></script>
+  <script src="./main.js?v=4"></script>
+</body>
+</html>
