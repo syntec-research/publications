@@ -841,3 +841,23 @@ body.dark-theme .theme-toggle-btn {
   text-decoration: none;
   border: 1px solid transparent;
 }
+
+/* Resources Page Responsive Tweaks */
+@media (max-width: 768px) {
+  .resource-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .resource-image-container {
+    flex: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .resource-title {
+    font-size: 22px;
+  }
+}
