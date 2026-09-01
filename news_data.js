@@ -1,5 +1,10 @@
 const NEWS_ITEMS = [
   {
+    date: "September 2026",
+    content: "We are presenting two papers at ECCV 2026 in Malmö, Sweden!",
+    isNew: true
+  },
+  {
     date: "July 2026",
     content: "We have open-sourced <a href='https://github.com/google/GNM' target='_blank' style='color: var(--primary-color); font-weight: 500; text-decoration: none;'>GNM</a> — the state-of-the-art family of parametric statistical human models and its associated perception stack.",
     isNew: true
@@ -7,7 +12,7 @@ const NEWS_ITEMS = [
   {
     date: "July 2026",
     content: "We are presenting 3 SIGGRAPH papers! See you in Los Angeles!",
-    isNew: true
+    isNew: false
   },
   {
     date: "May 2026",
