@@ -97,7 +97,43 @@
 <h2 class="year_title">2026</h2>
     <ul class="publications">
 
-	 
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://ptrvilya.github.io/echo/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_ECHO.png" alt="ECHO" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+ECHO: Ego-Centric modeling of Human-Object interactions
+            </h2><div class="publication_authors">
+Ilya A. Petrov, Vladimir Guzov, Riccardo Marin, Emre Aksan, Xu Chen, Daniel Cremers, Thabo Beeler, Gerard Pons-Moll
+           </div><div class="publication_venue">
+ECCV 2026
+            </div><div class="publication_abstract">
+Modeling human-object interactions (HOI) from an egocentric perspective is a critical yet challenging task, particularly when relying on sparse signals from wearable devices like smart glasses and watches. We present ECHO, the first unified framework to jointly recover human pose, object motion, and contact dynamics solely from head and wrist tracking. To tackle the underconstrained nature of this problem, we introduce a novel tri-variate diffusion process with independent noise schedules that models the mutual dependencies between the human, object, and interaction modalities. This formulation allows ECHO to operate with flexible input configurations, making it robust to intermittent tracking and capable of leveraging partial observations. Crucially, it enables training on a combination of large-scale human motion datasets and smaller HOI collections, learning strong priors while capturing interaction nuances. Furthermore, we employ a smooth inpainting inference mechanism that enables the generation of temporally consistent interactions for arbitrarily long sequences. Extensive evaluations demonstrate that ECHO achieves state-of-the-art performance, significantly outperforming existing methods lacking such flexibility.			</div>
+        </div>
+      </li>
+<!-- END Entry -->	
+
+<!--  Entry -->	
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://vcai.mpi-inf.mpg.de/projects/DPPT/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_DPPT.png" alt="DPPT" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Differentiable Polarized Path Tracing
+            </h2><div class="publication_authors">
+Pramod Rao, Jérémy Riviere, Xilong Zhou, Abhijeet Ghosh, Abhimitra Meka, Thabo Beeler, Marc Habermann, Christian Theobalt, Delio Vicini
+           </div><div class="publication_venue">
+ECCV 2026
+            </div><div class="publication_abstract">
+Differentiable Polarized Path Tracing makes polarized inverse rendering practical. Polarization reveals surface and material cues that intensity images discard, but standard path replay becomes unstable when polarized light transport requires inverting rank-deficient Mueller matrices. DPPT avoids this inversion by caching suffix radiance along each path, enabling stable reverse-mode gradients with much lower memory than conventional automatic differentiation.			</div>
+        </div>
+      </li>
+<!-- END Entry -->
 
 <!--  Entry -->	
       <li class="publication_entry">
