@@ -1,13 +1,23 @@
 const NEWS_ITEMS = [
   {
+    date: "December 2026",
+    content: "We are presenting a paper at NeurIPS 2026 in Sydney, Australia!",
+    isNew: true
+  },
+  {
+    date: "December 2026",
+    content: "We are presenting 4 papers at SIGGRAPH Asia 2026 in Kuala Lumpur, Malaysia!",
+    isNew: true
+  },
+  {
     date: "September 2026",
     content: "We are presenting two papers at ECCV 2026 in Malmö, Sweden!",
-    isNew: true
+    isNew: false
   },
   {
     date: "July 2026",
     content: "We have open-sourced <a href='https://github.com/google/GNM' target='_blank' style='color: var(--primary-color); font-weight: 500; text-decoration: none;'>GNM</a> — the state-of-the-art family of parametric statistical human models and its associated perception stack.",
-    isNew: true
+    isNew: false
   },
   {
     date: "July 2026",
@@ -31,6 +41,7 @@ const NEWS_ITEMS = [
   }
 ];
 
+/** Renders announcement items into the home and news page containers. */
 function renderNews() {
   // Render on index.html (Announcements block)
   const indexContainer = document.querySelector('.prominent_announcements');

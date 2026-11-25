@@ -97,6 +97,111 @@
 <h2 class="year_title">2026</h2>
     <ul class="publications">
 
+<!--  Entry -->
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://coupled-jump.github.io/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_CoupledJump.webp" alt="Concurrent Image Understanding and Generation" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Concurrent Image Understanding and Generation: Self-Correcting Coupled Markov Jump Processes
+            </h2><div class="publication_authors">
+Minh-Quan Le, Armand Comas, Alexandros Lattas, Stylianos Moschoglou, Pedro Vélez, Amit Raj, Aaron Germuth, Thabo Beeler, Dimitris Samaras, Di Qiu
+            </div><div class="publication_venue">
+NeurIPS 2026
+            </div><div class="publication_abstract">
+Human cognition does not separate understanding and generation. A teacher at a whiteboard speaks and draws together; each modality reshapes the other. In this paper, we bring this coupled loop to artificial systems. Masked Diffusion Models (MDMs) are ideally suited to this task, yet existing samplers either decode text and image interleavedly or independently update them in parallel branches that share only previous-step history, but not the other modality's latest decisions within the same step; combined with MDMs' inability to remask, cross-modal contradictions are neither detected nor repaired. We introduce Self-Correcting Coupled Markov Jump Processes (SC-CMJP), a framework in which one modality's transition rates are functionals of the other modality's confidence score, as weighted by cross-modal attention. Furthermore, a remasking jump retracts commitments the moment cross-modal evidence turns against them. In conjunction with SC-CMJP, we introduce CO<sub>2</sub>Jump (Self-COrrecting COupled Jump), a novel training-free single-pass sampler for joint multimodal generation. For training and evaluation purposes, we have created and will release three large-scale joint multimodal generation corpora: JEdit-1M, JMaze-200K, and JNono-200K, with matching in- and out-of-distribution benchmarks. CO<sub>2</sub>Jump achieves best joint performance for image understanding and editing as well as visual reasoning (maze and nonogram solving). The performance of the sampler scales monotonically with the number of denoising steps, evidence that the benefits of cross-modal coupling compound across the trajectory.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://4dqv.mpi-inf.mpg.de/DCGrasp/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_DCGrasp.webp" alt="DCGrasp" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+DCGrasp: Distance-aware Controllable Grasp Generation
+            </h2><div class="publication_authors">
+Hiroyasu Akada, Jesús Pérez, Emre Aksan, Vasileios Choutas, Cristian Romero, Alberto Garcia-Garcia, Vladislav Golyanik, Christian Theobalt, Thabo Beeler
+            </div><div class="publication_venue">
+SIGGRAPH Asia 2026
+            </div><div class="publication_abstract">
+Generating 3D hand-object interactions is essential for applications in robotics, AR/VR, and synthetic data generation, where flexible controllability and strong generalization to diverse object geometries are required. However, existing methods rarely satisfy these requirements, limiting their practical applicability. We present DCGrasp, a multi-modal diffusion framework for distance-aware controllable grasp generation. DCGrasp is built on a novel grasp energy term that computes Distance Profile, a signed distance from each hand vertex to the nearest object point, coupled with distance-aware weighting, effectively capturing the semantically similar hand–object interaction in near-contact regions while remaining invariant to object and hand identity. Given various controllable signals, DCGrasp first generates a Distance Profile based on a Diffusion Transformer, together with a corresponding candidate hand pose. We then refine the candidate pose through optimization, enforcing consistency between the optimized hand pose and the generated Distance Profile in near-contact regions. Our experiments show that DCGrasp produces high-quality, geometrically plausible grasps with flexible user control, generalizing effectively to diverse object and hand shapes and scales. Our work establishes a robust and versatile pipeline for the synthesis of controllable 3D hand–object interactions.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://princeton-computational-imaging.github.io/NanoEyeTracking/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img src="./images/2026_NanoEyeTracking.webp" alt="Efficient Nano-Optical Eye Tracking for Smart Glasses" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Efficient Nano-Optical Eye Tracking for Smart Glasses
+            </h2><div class="publication_authors">
+Jipeng Sun, Lekang Yuan, Ruslan Guseinov, Bernd Bickel, Thabo Beeler, Thomas Auzinger, Felix Heide
+            </div><div class="publication_venue">
+SIGGRAPH Asia 2026
+            </div><div class="publication_abstract">
+Accurate gaze tracking is essential for interaction in VR and AR devices; however, integrating it into the compact form factor of smart glasses remains a challenge. Existing approaches typically rely on active glint-based pupil-center corneal reflections to decouple eye rotation from device slippage. While effective, the required geometric arrangement of illumination sources is challenging to integrate into compact eyewear. Without the reference features provided by glints, passive tracking requires computationally expensive processing to resolve the ambiguity between slippage and rotation. In this work, we introduce a glint-free nano-optical eye-tracking method with the lens, sensor operation, and reconstruction network tailored to this task. We design a point spread function that provides an optical encoding that physically disentangles slippage from rotation. We validate our method both in simulation and with an experimental prototype, finding that our optical encoding with end-to-end design allows for an approximately 6&times; reduction in floating-point operations (FLOPs) compared to conventional glint-free methods relying on mobile-optimized networks. This creates a viable path for always-on, glint-free eye tracking in compact smart glasses.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://aidilayce.github.io/GraG-page/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img loading="lazy" src="./images/2026_GraG.webp" alt="Grasp in Gaussians" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+Grasp in Gaussians: Fast Monocular Reconstruction of Dynamic Hand–Object Interactions
+            </h2><div class="publication_authors">
+Ayce Idil Aytekin, Xu Chen, Zhengyang Shen, Thabo Beeler, Helge Rhodin, Rishabh Dabral, Christian Theobalt
+            </div><div class="publication_venue">
+SIGGRAPH Asia 2026
+            </div><div class="publication_abstract">
+We present Grasp in Gaussians (GraG), a fast and robust method for reconstructing dynamic 3D hand–object interactions from a single monocular video. Unlike recent approaches that optimize heavy neural representations, our method focuses on tracking the hand and the object efficiently, once initialized from pretrained large models. Our key insight is that, given strong pretrained object and hand priors, accurate and temporally stable hand–object motion can be recovered using a compact Sum-of-Gaussians (SoG) representation, revived from classical tracking literature and integrated with generative Gaussian-based initializations. We initialize object pose and geometry using a video-adapted SAM3D pipeline, then convert the resulting dense Gaussian representation into a lightweight SoG via subsampling. This compact representation enables efficient and fast tracking while preserving geometric fidelity, with the pretrained priors and simple geometric/contact losses providing accurate hand-object placement. For the hand, we adopt a complementary strategy: starting from off-the-shelf monocular hand pose initialization, we refine hand motion using simple yet effective 2D joint, silhouette, depth, and contact losses, avoiding per-frame refinement of a detailed 3D hand appearance model while maintaining stable articulation. Extensive experiments on public benchmarks demonstrate that GraG reconstructs temporally coherent hand-object interactions on long sequences 4.4&times;&ndash;38.9&times; faster than prior work while preserving temporally coherent hand-object motion.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
+<!--  Entry -->
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://humansensinglab.github.io/OmniFabric/';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img loading="lazy" src="./images/2026_OmniFabric.webp" alt="OmniFabric" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+OmniFabric: Coherent UV Space Texture Synthesis for 3D Garment Reconstruction
+            </h2><div class="publication_authors">
+Ding-Jiun Huang, Yuanhao Wang, Cheng Zhang, Hugo Bertiche, Alexandru-Eugen Ichim, Thabo Beeler, Fernando De la Torre
+            </div><div class="publication_venue">
+SIGGRAPH Asia 2026
+            </div><div class="publication_abstract">
+Automated generation of production-ready 3D garment assets from a single image is a central challenge in digital content creation. While recent generative models have significantly advanced 3D geometry reconstruction, synthesizing high-quality textures remains a bottleneck. Existing methods often bake environmental illumination and shadows directly into the texture map, or they fail to maintain global structural coherence, making the resulting assets unusable for physical simulation and relighting. In this work, we introduce OmniFabric, a novel approach that synthesizes globally coherent texture maps directly within the 2D sewing pattern space. Given a single reference image, our pipeline utilizes an estimated 3D mesh and generative priors of powerful Vision-Language Models (VLMs) to establish a complete but coarse texture initialization across the unwrapped sewing patterns. We then leverage a specialized diffusion transformer, trained via an automated synthetic data engine and conditioned on 3D positional features, to refine this initialization directly in the canonical UV domain. This effectively removes distortion and baked-in artifacts to extract a clean and normalized texture map that preserves the original garment design. Extensive experiments demonstrate that OmniFabric significantly outperforms state-of-the-art baselines, yielding photorealistic 3D garments with high-quality textures.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
 <!--  Entry -->	
       <li class="publication_entry">
         <div class="publication" onclick="location.href='https://ptrvilya.github.io/echo/';" style="cursor: pointer;">
@@ -294,6 +399,27 @@ We present Relightable Holoported Characters (RHC), a novel person-specific meth
       </li>
 <!-- END Entry -->
 
+<!--  Entry -->
+      <li class="publication_entry">
+        <div class="publication" onclick="location.href='https://joslefaure.github.io/assets/html/finebench.html';" style="cursor: pointer;">
+          <div class="publication_image">
+            <img loading="lazy" src="./images/2026_FineBench.webp" alt="FineBench" />
+          </div>
+          <div class="publication_content">
+            <h2 class="publication_title">
+FineBench: Benchmarking and Enhancing Vision-Language Models for Fine-grained Human Activity Understanding
+            </h2><div class="publication_authors">
+Gueter Josmy Faure, Min-Hung Chen, Jia-Fong Yeh, Hung-Ting Su, Winston H. Hsu
+            </div><div class="publication_venue">
+CVPR 2026 Workshop
+            </div><div class="publication_abstract">
+Vision-Language Models (VLMs) have demonstrated remarkable capabilities in general video understanding, yet they often struggle with the fine-grained comprehension crucial for real-world applications requiring nuanced interpretation of human actions and interactions. While some recent human-centric benchmarks evaluate aspects of model behaviour such as fairness/ethics, emotion perception, and broader human-centric metrics, they do not combine long-form videos, very dense QA coverage, and frame-level spatial/temporal grounding at scale. To bridge this gap, we introduce FineBench, a human-centric video question answering (VQA) benchmark specifically designed to assess fine-grained understanding. FineBench comprises 199,420 multiple-choice QA pairs densely annotated across 64 long-form videos (15 minutes each), focusing on detailed person movement, person interaction, and object manipulation, including compositional actions. Our extensive evaluation reveals that while proprietary models like GPT-5 achieve respectable performance, current open-source VLMs significantly underperform, struggling particularly with spatial reasoning in multi-person scenes and distinguishing subtle differences in human movements and interactions. To address these identified weaknesses, we propose FineAgent, a modular framework that enhances VLMs by leveraging a Localizer and a Descriptor. Experiments show that FineAgent consistently improves the performance of various open VLMs on FineBench. FineBench provides a rigorous testbed for future research into fine-grained human-centric video understanding, while FineAgent offers a practical approach to enhance such reasoning in current VLMs.
+            </div>
+          </div>
+        </div>
+      </li>
+<!-- END Entry -->
+
 <!--  Entry -->	
       <li class="publication_entry">
         <div class="publication" onclick="location.href='https://onlinelibrary.wiley.com/doi/10.1111/cgf.70404';" style="cursor: pointer;">
@@ -360,9 +486,9 @@ The human face is central to communication. For immersive applications, the digi
           </div>
           <div class="publication_content">
             <h2 class="publication_title">
-GIGA: Generalizable Sparse Image-driven Gaussian Humans
+GarmentCrafter: Progressive Novel View Synthesis for Single-View 3D Garment Reconstruction and Editing
             </h2><div class="publication_authors">
-Yuanhao Wang, Cheng Zhang, Gonçalo Frazão1, Jinlong Yang, Alexandru-Eugen Ichim, Thabo Beeler, Fernando De la Torre
+Yuanhao Wang, Cheng Zhang, Gonçalo Frazão, Jinlong Yang, Alexandru-Eugen Ichim, Thabo Beeler, Fernando De la Torre
            </div><div class="publication_venue">
 3DV 2026
             </div><div class="publication_abstract">
@@ -1705,7 +1831,7 @@ The increasing demand for 3D content in augmented and virtual reality has motiva
 	</ul>
 </div>
 </div>
-<script src="./news_data.js?v=4"></script>
+<script src="./news_data.js?v=5"></script>
 <script src="./main.js?v=6"></script>
 </body>
 </html>
